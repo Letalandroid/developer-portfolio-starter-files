@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family-h: 'Prata', serif;
+    --font-family-p: 'Inter', sans-serif;
+    --color: #878787;
+    --background-btn: #fbe850;
+    --background-color-sct: #2e3038;
+    color: #fff;
+}
+
+body {
+    background-color: #0a0a0b;
+}
+
+.menu-responsive {
+    display: none;
+}
+
+.black {
+    margin: 0 100px;
+}
+
+.header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-family-h);
+}
+
+.header ul {
+    width: 350px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color);
+    font-family: var(--font-family-p);
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: var(--background-btn);
+    font-size: 16px;
+    font-family: var(--font-family-h);
+    font-weight: 700;
+}
+
+.sct-info {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 90px 0;
+}
+
+.info-container {
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.info-container h2 {
+    font-size: 62px;
+    font-family: var(--font-family-h);
+    font-weight: 200;
+}
+
+p {
+    font-size: 14px;
+    font-family: var(--font-family-p);
+    font-weight: 600;
+    color: var(--color);
+}
+
+.info-container p {
+    width: 750px;
+    font-size: 20px;
+    font-family: var(--font-family-p);
+    font-weight: 600;
+    color: var(--color);
+}
+
+.companies-img {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 90px;
+}
+
+.logo-c {    
+    margin: 0 10px;
+}
+
+.sct-projects {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.sct-projects article {
+    width: 530px;
+    line-height: 25px;
+}
+
+h3 {
+    font-size: 35px;
+    font-family: var(--font-family-h);
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+.sct-cofounder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--background-color-sct);
+}
+
+.sct-cofounder article {
+    width: 560px;
+    padding: 40px 20px;
+}
+
+.sct-cofounder p {
+    margin: 20px 0 38px 0;
+}
+
+.sct-work-with-me {
+    width: 520px;
+    padding: 40px 0;
+}
+
+.sct-work-with-me h3 {
+    margin: 0;
+}
+
+.sct-work-with-me p {
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.footer-container {
+    background-color: var(--background-color-sct);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+footer h4 {    
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-family-h);
+}
+
+.icons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1299px) {
+
+    .sct-projects {
+        height: 925px;
+        justify-content: center;
+        align-content: space-between;
+    }
+
+    .sct-projects article, .sct-cofounder article {        
+        margin: 0 10px;
+    }
+
+    .sct-cofounder {
+        justify-content: center;
+    }
+
+    .sct-cofounder article {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    nav, .header button {
+        display: none;
+    }
+
+    .menu-responsive {
+        display: inline-block;
+    }
+
+    .black {
+        margin: 0 50px;
+    }
+
+    .info-container {
+        width: 600px;
+    }
+
+    .info-container h2, .info-container p {        
+        width: 600px;
+    }
+
+    .info-container h2 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .black {
+        margin: 0 25px;
+    }
+
+    .info-container {
+        width: 500px;
+    }
+
+    .info-container h2, .info-container p {        
+        width: 500px;
+    }
+
+    .info-container h2 {
+        font-size: 35px;
+    }
+    
+    .info-container p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .black {
+        margin: 0 18px;
+    }
+
+    .info-container {
+        width: 400px;
+    }
+
+    .info-container h2, .info-container p {        
+        width: 400px;
+    }
+
+    .info-container h2 {
+        font-size: 30px;
+    }
+    
+    .info-container p {
+        font-size: 13px;
+    }
+
+    .sct-projects {
+        height: 800px;
+        justify-content: center;
+    }
+
+    .sct-projects article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sct-projects img {
+        width: 420px;
+    }
+
+    .sct-cofounder h3 {
+        font-size: 25px;
+    }
+
+    .sct-cofounder p {
+        font-size: 13px;
+    }
+
+    .sct-work-with-me {
+        width: auto;
+    }
+
+}
+
+@media (max-width: 435px) {
+
+    .info-container {
+        width: 100%;
+    }
+
+    .info-container h2, .info-container p {        
+        width: 320px;
+    }
+
+    .info-container h2 {
+        font-size: 30px;
+    }
+
+    .sct-projects {
+        height: 700px;
+        justify-content: center;
+    }
+
+    .sct-projects h3 {
+        font-size: 18px;
+    }
+
+    .sct-projects p {
+        font-size: 13px;
+    }
+
+    .sct-projects img {
+        width: 300px;
+    }
+
+    .companies-img {
+        height: 100px;
+    }
+
+}
